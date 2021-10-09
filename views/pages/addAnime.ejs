@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<%- include('../partialsForHtml/head'); %>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1>Top Anime</h1>
+				</div>
+				<nav>
+					<link rel = "stylesheet" href = 'css/styl.css'>
+					<%- include('../partialsForHtml/navbar'); %>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="container">
+			<a href = '/ranks' class = 'box-nav d-flex justify-between border-shadow'>
+				<span class = 'text-gradient'> <em class="fas fa-angle-double-left"></em> Back to Anime Ranks </span>
+			</a>
+			<h1>Add An Anime</h1>
+		</div>
+	
+		<div class = "small-container">
+			
+			<div class="form-title text-center">
+				<h2 class="text-dark" >New Anime</h2>
+				<span class="text-light" >Use the form below to add an anime to our library</span>
+			</div>
+
+			<%- include('../partialsForHtml/_form') %>
+			
+		</div>
+		<div class="container">
+			<div>/Space/</div>
+			<img src = "images/noseMouth.png" alt = "Captivating Image" width = "1500" height = "500" >
+	
+		</div>
+	
+		
+		
+
+		<section id = "newsletter">
+			<div class = "container">
+				<h4>Sign Up to share your suggestions and find your next anime</h4>
+				<form>
+					<input type = "email" placeholder = "Enter your email: ">
+					<button type = "submit" class = "button_1">Subscribe Now!</button>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<p>Anime Rankings, various Images are credited to other </p>
+		</footer>
+	</body>
+</html>

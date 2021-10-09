@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<%- include('../partialsForHtml/head'); %>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1>Top Anime</h1>
+				</div>
+				<nav>
+					<link rel = "stylesheet" href = 'css/styl.css'>
+					<%- include('../partialsForHtml/navbar'); %>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="container">
+			<a href = '/ranks' class = 'box-nav d-flex justify-between border-shadow'>
+				<span class = 'text-gradient'> <em class="fas fa-angle-double-left"></em> Back to Anime Ranks </span>
+			</a>
+			<h1>Update An Anime</h1>
+		</div>
+	
+		<div class = "small-container">
+			
+			<div class="form-title text-center">
+				<h2 class="text-dark" >Update Anime</h2>
+				<span class="text-light" >Use the form below to update an anime in our library</span>
+			</div>
+
+			<form method="POST" id="update_anime" class="" >
+				<div class="new_anime">
+					<div class="form-group">
+						<label for="name" class="text-orange">Anime Name</label>
+						<input id ="name" type="text" name="name" value="<%= anime.name %>" placeholder ="Naruto">
+					</div>
+					<div class="form-group" >
+						<label for='rating' class="text-orange">Anime Rank</label>
+						<input id="rating" type="text" name="rating" value="<%= anime.rating%>" placeholder="8.00">
+					</div>
+					<div class="form-group">
+						<label for="pictureLink" class="text-orange">Lastly, please provide a URL to a picture represeting this anime</label>
+						<input id="pictureLink" type="text" name="pictureLink" value="<%= anime.pictureLink%>" placeholder="https://www.google.com/search?q=attack+on+titan&sxsrf=AOaemvLVd-fSwaVE8zU0qab9oS-hPaoL6w:1631763306177&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjrguOByILzAhX3FTQIHSv9DDMQ_AUoAnoECAEQBA&biw=1141&bih=558&dpr=2.5#imgrc=kXpfDnnpY8vVVM">  
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn text-dark">Save</button>
+					</div>
+					
+				</div>
+			</form>
+			
+			
+		</div>
+		<div class="container">
+			<div>/Space/</div>
+			<img src = "images/noseMouth.png" alt = "Captivating Image" width = "1500" height = "500" >
+	
+		</div>
+	
+		
+		
+
+		<section id = "newsletter">
+			<div class = "container">
+				<h4>Sign Up to share your suggestions and find your next anime</h4>
+				<form>
+					<input type = "email" placeholder = "Enter your email: ">
+					<button type = "submit" class = "button_1">Subscribe Now!</button>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<p>Anime Rankings, various Images are credited to other </p>
+		</footer>
+	</body>
+</html>

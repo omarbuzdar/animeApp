@@ -1,0 +1,13 @@
+<% for(var i=0; i<anime.length; i++){ %>
+<tr>
+	
+	<td class="text-center"><%= i+1 %></td>
+	<td><%=anime[i].name %></td>
+	<td class="text-center"><%=anime[i].rating %></td>
+	<td class="text-center">
+		<a href = '/ranks/add-rank?id=<%= anime[i]._id%>' class="btn border-shadow update">
+			<span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+		</a>
+	</td>
+</tr>
+<% } %> 
