@@ -63,7 +63,7 @@ exports.update = (req, res, next) => {
 		if(!data){
 			res.status(404).send({message: `Cannot Update anime with id: ${animeID}. Maybe anime not found`})
 		} else {
-			res.send(req.body);
+			res.redirect('/ranks').send(req.body);
 		}
 	})
 	.catch(err => {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+	<head>
+		<%- include('../partialsForHtml/head'); %>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1>A Better Way to Anime</h1>
+				</div>
+				<nav>
+					<ul>
+						<li> <a href = "/" >Home</a></li> <!-- href seems to follow app.js routes -->
+						<li> <a href = "ranks" >Best Anime</a></li> 
+						<li> <a href = "playLists" >Anime Playlists</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id = "showcase">
+			<div class = "container">
+				<h1>General Accepted Consensus on the State of the Anime</h1>
+				<img src = "./images/animeEyes1.png" alt = "Captivating Image" width = "1500" height = "500">
+				<img src = "images/samurai.jpg" alt = "Captivating Image" width = "1500" height = "500" >
+				<img src = "images/noseMouth.png" alt = "Captivating Image" width = "1500" height = "500" >
+			</div>
+		</section>
+
+		<section id = "newsletter">
+			<div class = "container">
+				<h4>Sign Up to share your suggestions and find your next anime</h4>
+				<form>
+					<input type = "email" placeholder = "Enter your email: ">
+					<button type = "submit" class = "button_1">Subscribe Now!</button>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<p>Anime Rankings, various Images are credited to other </p>
+		</footer>
+	</body>
+</html>

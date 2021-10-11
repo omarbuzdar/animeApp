@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 exports.homeRoute = (req, res, next) => {
-	res.render('pages/index');
-	/*if static - res.sendFile(__dirname + '/public/index.html');*/
+	res.render('pages/home');
+	/*if static - res.sendFile(__dirname + '/public/home.html');*/
 }
 
 exports.ranks = (req, res, next) => {
